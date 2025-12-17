@@ -7,10 +7,6 @@
   # No build command needed for static site
   command = "echo 'No build required for static site'"
 
-# Form settings
-[[plugins]]
-  package = "@netlify/plugin-form"
-
 # Redirect rules
 [[redirects]]
   from = "/contact"
