@@ -7,6 +7,9 @@
   # No build command needed for static site
   command = "echo 'No build required for static site'"
 
+# Form notifications settings (submissions will be sent to your Netlify account email)
+# You can configure additional notification settings in Netlify dashboard
+
 # Redirect rules
 [[redirects]]
   from = "/contact"

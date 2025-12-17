@@ -329,7 +329,14 @@
                 </div>
                 
                 <div class="contact-form-container" data-aos="fade-up" data-aos-delay="100">
-                    <form id="contact-form" action="https://formspree.io/f/xjkvgebw" method="POST">
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <!-- Hidden field for spam protection (Netlify honeypot) -->
+                        <p class="hidden">
+                            <label>
+                                Don't fill this out if you're human: <input name="bot-field" />
+                            </label>
+                        </p>
+                        
                         <div class="mb-6">
                             <label for="name" class="form-label">Full Name *</label>
                             <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
@@ -349,11 +356,6 @@
                             <label for="project" class="form-label">Project Description *</label>
                             <textarea id="project" name="message" rows="5" class="form-input" placeholder="Tell us about your project..." required></textarea>
                         </div>
-
-                        <!-- Hidden fields for email configuration -->
-                        <input type="hidden" name="_subject" value="New Project Inquiry from LearningBee Website">
-                        <input type="hidden" name="_next" value="?success=true#contact">
-                        <input type="hidden" name="_template" value="box">
                         
                         <button type="submit" class="btn-primary w-full" id="submit-btn">
                             <span id="btn-text">Send Inquiry</span>
