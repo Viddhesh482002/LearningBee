@@ -1,0 +1,30 @@
+# LearningBee Static Site - Git Ignore
+
+# User's actual logo (placeholder in repo)
+logo-full.png
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# IDE Files
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Build/Deploy (if using build tools later)
+dist/
+build/
+.cache/
+
+# Netlify (if using Netlify CLI)
+.netlify/

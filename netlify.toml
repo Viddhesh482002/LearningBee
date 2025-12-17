@@ -1,0 +1,31 @@
+# Netlify Configuration for LearningBee Website
+
+[build]
+  # Publish directory (root directory for static sites)
+  publish = "."
+  
+  # No build command needed for static site
+  command = "echo 'No build required for static site'"
+
+# Form settings
+[[plugins]]
+  package = "@netlify/plugin-form"
+
+# Redirect rules
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
+
+# Custom success page for form submission
+[[redirects]]
+  from = "/thanks"
+  to = "/?success=true#contact"
+  status = 302
+
+# 404 page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

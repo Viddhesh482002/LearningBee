@@ -1,0 +1,337 @@
+/* Custom CSS for LearningBee Website */
+
+/* Font Families */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+#navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(31, 41, 55, 0.95);
+}
+
+#navbar.scrolled {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Animation */
+.logo-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.logo-container img {
+    transition: all 0.3s ease;
+}
+
+/* Button Styles */
+.btn-primary {
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #60A5FA 0%, #FBBF24 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+}
+
+.btn-secondary {
+    padding: 12px 32px;
+    background: rgba(31, 41, 55, 0.8);
+    color: #60A5FA;
+    border: 2px solid #60A5FA;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #60A5FA;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-illustration {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Service Cards */
+.service-card {
+    background: rgba(31, 41, 55, 0.6);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.5);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(31, 41, 55, 0.6);
+    padding: 48px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.project-card:hover {
+    box-shadow: 0 16px 32px rgba(96, 165, 250, 0.3);
+    transform: translateY(-5px);
+    border-color: rgba(96, 165, 250, 0.5);
+}
+
+.project-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+/* Benefit Badges */
+.benefit-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.6) 0%, rgba(133, 77, 14, 0.6) 100%);
+    border: 2px solid #FBBF24;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #FDE68A;
+    transition: all 0.3s ease;
+}
+
+.benefit-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(251, 191, 36, 0.4);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(133, 77, 14, 0.8) 100%);
+}
+
+/* Stat Cards */
+.stat-card {
+    padding: 24px;
+    background: rgba(31, 41, 55, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(96, 165, 250, 0.3);
+    border-color: rgba(96, 165, 250, 0.5);
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: rgba(31, 41, 55, 0.8);
+    padding: 48px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: #E5E7EB;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid rgba(75, 85, 99, 0.5);
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    background: rgba(17, 24, 39, 0.6);
+    color: #F3F4F6;
+}
+
+.form-input:focus {
+    border-color: #60A5FA;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.form-input::placeholder {
+    color: #9CA3AF;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px;
+    }
+    
+    .contact-form-container {
+        padding: 32px 24px;
+    }
+    
+    .project-card {
+        padding: 32px 24px;
+    }
+    
+    .project-icon {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Loading Spinner */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #60A5FA;
+    outline-offset: 2px;
+}
+
+/* Scrollbar Styling for Dark Theme */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1F2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #60A5FA;
+}
+
+/* Print Styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
+

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearningBee - Professional Software Services. Custom software development, web applications, cloud solutions, and automation tools.">
+    <meta name="keywords" content="software development, web applications, custom software, cloud solutions, automation">
+    <title>LearningBee - Professional Software Services</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-900 text-gray-100">
+    
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-gray-800 shadow-lg shadow-gray-900/50 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#home" class="logo-container">
+                        <img src="logo.png" alt="LearningBee - Don't worry we will see" class="h-12 md:h-14 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Home</a>
+                    <a href="#services" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Services</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Projects</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                    <a href="#contact" class="btn-primary">Get a Quote</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-yellow-400 transition-colors">Home</a>
+                <a href="#services" class="block py-2 text-gray-300 hover:text-yellow-400 transition-colors">Services</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-yellow-400 transition-colors">Projects</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-yellow-400 transition-colors">About Us</a>
+                <a href="#contact" class="block py-2 text-yellow-400 font-semibold">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section pt-24 pb-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Hero Content -->
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-6 font-poppins leading-tight">
+                        Transform Your Ideas Into 
+                        <span class="text-yellow-400">Reality</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Professional software services tailored to your business needs. From custom applications to cloud solutions, we deliver excellence.
+                    </p>
+                    <p class="text-lg text-gray-400 italic mb-8 font-poppins">
+                        "don't worry we will see" ✨
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="btn-primary text-center">Get a Quote</a>
+                        <a href="#projects" class="btn-secondary text-center">View Projects</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="hero-illustration">
+                        <i class="fas fa-laptop-code text-9xl text-blue-400 opacity-80"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-4 font-poppins">Our Services</h2>
+                <p class="text-xl text-gray-300">Comprehensive software solutions for your business</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon bg-blue-900">
+                        <i class="fas fa-globe text-4xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Web Application Development</h3>
+                    <p class="text-gray-300">Modern, responsive web applications built with cutting-edge technologies for optimal performance.</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon bg-yellow-900">
+                        <i class="fas fa-code text-4xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Custom Software Development</h3>
+                    <p class="text-gray-300">Tailored software solutions designed specifically for your unique business requirements.</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon bg-teal-900">
+                        <i class="fas fa-cloud text-4xl text-teal-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Cloud-Based Solutions</h3>
+                    <p class="text-gray-300">Scalable cloud infrastructure and applications for seamless business operations.</p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon bg-orange-900">
+                        <i class="fas fa-robot text-4xl text-orange-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Automation & Tools</h3>
+                    <p class="text-gray-300">Intelligent automation solutions to streamline workflows and boost productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-4 font-poppins">Our Projects</h2>
+                <p class="text-xl text-gray-300">Showcasing our expertise through successful deliveries</p>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Project 1: Peer-to-Peer File Transfer -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/3">
+                            <div class="project-icon bg-gradient-to-br from-blue-500 to-teal-500">
+                                <i class="fas fa-share-alt text-6xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-3xl font-bold text-gray-100 mb-4">Peer-to-Peer File Transfer Site</h3>
+                            <p class="text-gray-300 mb-6 text-lg">
+                                A secure and fast peer-to-peer file sharing platform enabling direct device-to-device transfers.
+                            </p>
+                            
+                            <div class="mb-6">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Key Features:</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Direct device-to-device file transfer</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">End-to-end encryption for security</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">No central server dependency</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="benefits">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Benefits:</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="benefit-badge">⚡ Faster Transfers</span>
+                                    <span class="benefit-badge">🔒 Enhanced Privacy</span>
+                                    <span class="benefit-badge">💰 Reduced Server Costs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Expense Management System -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                        <div class="md:w-1/3">
+                            <div class="project-icon bg-gradient-to-br from-yellow-500 to-orange-500">
+                                <i class="fas fa-wallet text-6xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-3xl font-bold text-gray-100 mb-4">Expense Management System for Field Staff</h3>
+                            <p class="text-gray-300 mb-6 text-lg">
+                                A comprehensive digital solution to manage daily expenses for field employees with approval workflows.
+                            </p>
+                            
+                            <div class="mb-6">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Key Features:</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Expense entry with receipt uploads</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Multi-level approval workflow</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Real-time reporting and analytics</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="benefits">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Benefits:</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="benefit-badge">📊 Improved Visibility</span>
+                                    <span class="benefit-badge">✅ Reduced Errors</span>
+                                    <span class="benefit-badge">⚡ Faster Reimbursements</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Cloud Kitchen Website -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/3">
+                            <div class="project-icon bg-gradient-to-br from-teal-500 to-green-500">
+                                <i class="fas fa-utensils text-6xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-3xl font-bold text-gray-100 mb-4">Cloud Kitchen Website</h3>
+                            <p class="text-gray-300 mb-6 text-lg">
+                                A complete online platform for managing cloud kitchen operations from menu to delivery.
+                            </p>
+                            
+                            <div class="mb-6">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Key Features:</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Online menu and ordering system</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Real-time order tracking</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                                        <span class="text-gray-300">Comprehensive admin dashboard</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="benefits">
+                                <h4 class="text-xl font-semibold text-gray-100 mb-3">Benefits:</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="benefit-badge">🌐 Increased Online Reach</span>
+                                    <span class="benefit-badge">⚙️ Operational Efficiency</span>
+                                    <span class="benefit-badge">😊 Better Customer Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-6 font-poppins">About LearningBee</h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    We are a passionate team of software developers dedicated to transforming ideas into powerful digital solutions. With expertise across web development, custom software, cloud solutions, and automation, we help businesses of all sizes achieve their technological goals.
+                </p>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Our approach combines technical excellence with a deep understanding of business needs. We believe in building long-term partnerships with our clients, delivering not just software, but solutions that drive real business value.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">50+</div>
+                        <div class="text-gray-300">Projects Completed</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl font-bold text-blue-400 mb-2">100%</div>
+                        <div class="text-gray-300">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl font-bold text-teal-400 mb-2">24/7</div>
+                        <div class="text-gray-300">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-4 font-poppins">Get In Touch</h2>
+                    <p class="text-xl text-gray-300">Let's discuss your project and bring your ideas to life</p>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="100">
+                    <form id="contact-form" action="https://formspree.io/f/xjkvgebw" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="project" class="form-label">Project Description *</label>
+                            <textarea id="project" name="message" rows="5" class="form-input" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <!-- Hidden fields for email configuration -->
+                        <input type="hidden" name="_subject" value="New Project Inquiry from LearningBee Website">
+                        <input type="hidden" name="_next" value="?success=true#contact">
+                        <input type="hidden" name="_template" value="box">
+                        
+                        <button type="submit" class="btn-primary w-full" id="submit-btn">
+                            <span id="btn-text">Send Inquiry</span>
+                            <span id="btn-loading" class="hidden">
+                                <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+                            </span>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="success-message" class="hidden mt-6 p-4 bg-green-900 border border-green-500 text-green-300 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Thank you! Your inquiry has been sent successfully. We'll get back to you soon.
+                    </div>
+                    
+                    <!-- Error Message -->
+                    <div id="error-message" class="hidden mt-6 p-4 bg-red-900 border border-red-500 text-red-300 rounded-lg">
+                        <i class="fas fa-exclamation-circle mr-2"></i>
+                        <span id="error-text">Oops! Something went wrong. Please try again.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="LearningBee" class="h-10 md:h-12 w-auto">
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">Get in touch through our contact form</p>
+                    <p class="text-gray-500 text-sm italic">"don't worry we will see" ✨</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 LearningBee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
